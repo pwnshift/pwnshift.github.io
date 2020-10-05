@@ -125,6 +125,7 @@ def remove():
 
 def writeBad():
     while True:
+        try:
             # sleep for a while to be nice
             time.sleep(10)
             i = False
