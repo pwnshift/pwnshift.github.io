@@ -132,6 +132,8 @@ However, after adding the Responder server to any trusted Security Zone, a NetNT
 {: .center}
 [![word client leak](/assets/hashes/wordclient2.png)](/assets/hashes/wordclient2.png)
 
+Note: The user agents look old, but the version was actually the latest in 2020 when it was tested. That is just how Microsoft updates them.
+
 ### Testing Summary {#TestingSummary}
 
 The previous tests demonstrate differences in how Security Zones are treated by built-in web clients. The built-in Microsoft Word web client will automatically authenticate to servers in any trusted Security Zone, while Windows Media Player will automatically authenticate to servers in the “Computer” zone but not the “Trusted Sites” zone. Other clients (Internet Explorer, and others using WinINet or WinHTTP) also seem to trust the “Computer” zone more than the “Trusted Sites” zone.
@@ -176,8 +178,6 @@ By inspecting the traffic on the server, the user agent proves to be Internet Ex
 
 {: .center}
 [![macro leak 2](/assets/hashes/macroleak2.png)](/assets/hashes/macroleak2.png)
-
-Note: The user agents look old, but the version was actually the latest in 2020 when it was tested. That is just how Microsoft updates them.
 
 ## Improvements {#Improvements}
 
